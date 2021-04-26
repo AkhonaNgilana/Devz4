@@ -1,0 +1,28 @@
+
+import java.util.Scanner;
+public class Rect {
+     static int input_length(){
+         System.out.println("Please enter first number");
+         Scanner z = new Scanner(System.in);
+         int n1= z.nextInt();
+         return n1;
+     }
+     static int input_width(){
+         System.out.println("Please enter second number");
+         Scanner z = new Scanner(System.in);
+         int n2= z.nextInt();
+         return n2;
+     }
+   
+    public static void main(String[] args ) {
+        int num1= input_length();
+        int num2 = input_width();
+        int peri= 2*(num1+num2);
+                
+               
+        int area= num1*num2;
+        System.out.println("The value of  the perimeter is;" + peri);
+        System.out.println("The value of the area is;" +area);
+    }
+   
+    }
