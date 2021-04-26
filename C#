@@ -1,0 +1,42 @@
+
+C#
+
+
+using System;
+
+namespace RectApplication
+{
+  class code
+   {
+     static input_length()
+    {
+       Console.writeLine("Enter the length ");
+       int le= Convert.ToInt32(Console.RadLine());
+       return leng;
+     }
+   static input_width()
+   {
+    Console.writeLine("Enter the width ");
+       int di= Convert.ToInt32(Console.RadLine());
+       return wid;
+}
+   static int cal_area( int leng, int wid)
+   {
+    int area = leng*wid;
+    return area;
+   }
+  static int perimeter( int leng, int wid)
+  {
+  int perimeter= (leng+wid)*2;
+   return perimeter;
+  }
+  static void Main(string[]args){
+   int wid=input_length();
+   int leng= input_width();
+   int area= calArea( leng, wid);
+   int perimeter= perimeter(wid, leng);
+   Console.writeline (area ,perimeter);
+   Console.Readline();
+   }
+  }
+}
