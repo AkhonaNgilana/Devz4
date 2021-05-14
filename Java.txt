@@ -1,0 +1,56 @@
+import java.util.Scanner;
+
+
+public class RectObj {
+     
+     public int length;
+     public int width;
+     public  RectObj(int len, int wid){
+     
+         width = len;
+         length= wid;   
+     }
+
+      public void rectInput(){
+         Scanner scan =new Scanner (System.in);
+         System.out.println("Enter the length");
+         length = scan.nextInt();
+         System.out.println("Enter integer");
+         width =scan.nextInt();
+       
+     }
+      public double CalcArea(){
+              double area;
+           area = length * width;
+           return area;
+      }
+      public double CalPerimeter(){
+           double perimeter;
+           perimeter=2*(length +length);
+           return perimeter;
+        
+      }
+     public void rectOutput(){
+         System.out.println("The length of a rectangle is:" +length);
+         System.out.println("The width of a rectangle is:" +width);
+         System.out.print("The area of a rectangle is:" +CalcArea());
+         System.out.println("The perimeter of a rectangle is :" +CalPerimeter());
+        
+        
+     }
+}
+
+     
+
+public class RectTester {
+    public static void main(String[]args){
+        RectObj v1 =new RectObj (2,3);
+        v1.rectOutput();
+        RectObj v2 = new RectObj (0,0);
+        v2.rectInput();
+        v2.rectOutput();
+        
+        
+    
+}
+}
